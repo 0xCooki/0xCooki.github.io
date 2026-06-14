@@ -129,7 +129,7 @@ export default function AcademiaPage() {
                 <h3 className="font-medium text-foreground">
                   Response Playbook: Disinformation in the City
                 </h3>
-                <span className="text-sm text-muted">2022</span>
+                <span className="text-sm text-muted">2024</span>
               </div>
               <p className="text-sm text-accent-muted">
                 <a href="https://openresearch.amsterdam/en/page/114312/response-playbook-disinformation-in-the-city" className="hover:underline">
