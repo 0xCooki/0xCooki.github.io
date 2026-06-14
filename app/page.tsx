@@ -1,21 +1,42 @@
+import Link from "next/link";
+import { IntroHero } from "./components/IntroHero";
+import { PageShell } from "./components/PageShell";
+
 export default function Home() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center px-6 py-24">
-      <div className="w-full max-w-xl space-y-6 text-center sm:text-left">
-        <p className="text-sm font-medium tracking-wide text-zinc-500 uppercase">
-          Personal site
-        </p>
-        <h1 className="text-4xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-5xl">
-          0xCooki
-        </h1>
-        <p className="text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Welcome. Edit{" "}
-          <code className="rounded bg-zinc-100 px-1.5 py-0.5 text-sm text-zinc-800 dark:bg-zinc-900 dark:text-zinc-200">
-            app/page.tsx
-          </code>{" "}
-          to build out your home page.
-        </p>
+    <PageShell>
+      <div className="max-w-3xl space-y-10">
+        <IntroHero />
+
+        <section className="space-y-4 border-t border-border pt-10">
+          <h2 className="text-sm font-medium tracking-widest text-accent uppercase">
+            In brief
+          </h2>
+          <ul className="space-y-3 text-muted">
+            <li className="flex gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+              <span>
+                Solidity engineer focused on elegant architecture, clean
+                incentives, and delivering systems that meaningfully improve the world.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+              <span>
+                Academic background that shapes how I reason about problems; theoretical rigour
+                paired with practical trade-offs.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
+              <span>
+                Curious, collaborative, and happiest when the work is both
+                technically innovative and genuinely useful.
+              </span>
+            </li>
+          </ul>
+        </section>
       </div>
-    </main>
+    </PageShell>
   );
 }
